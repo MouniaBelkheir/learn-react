@@ -1,4 +1,9 @@
 import "./Button.css";
-export default function Button({tag}) {
-	return <button>{tag}</button>;
+export default function Button({ tag, children }) {
+	return (
+		<button>
+			{tag}
+			{children}
+		</button>
+	);
 }

@@ -1,10 +1,11 @@
 import "./Post.css";
-export default function Post({title,body}) {
+export default function Post({ title, body, children }) {
 	return (
 		<div className="post">
-			<h2>This is the post number: {title}</h2>
+			<div style={{ fontSize: "10px", margin:"0" }}>{children}</div>
+			<h2>{title}</h2>
 			<hr />
-			<p>This is the post number {body}</p>
+			<p>{body}</p>
 		</div>
 	);
 }
