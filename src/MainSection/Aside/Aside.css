@@ -10,15 +10,4 @@ aside {
 	width: 20%;
 	height: fit-content;
 }
-button {
-	color: white;
-	background-color: #730077;
-	margin: 10px;
-	border-radius: 10px;
-	border-color: transparent;
-	padding: 10px;
-	box-shadow: 0px 5px 5px rgb(180, 179, 179);
-}
-button:hover {
-	background-color: #9a049f;
-}
+
