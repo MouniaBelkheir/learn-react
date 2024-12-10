@@ -1,6 +1,6 @@
 import "./MainSection.css";
-import Article from "./Article";
-import Aside from "./Aside";
+import Article from "./Aticle/Article";
+import Aside from "./Aside/Aside";
 export default function MainSection() {
 	return (
 		<div className="Main">

@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./Header";
-import MainSection from "./MainSection";
+import Header from "./Header/Header";
+import MainSection from "./MainSection/MainSection";
 
 function App() {
 	return (

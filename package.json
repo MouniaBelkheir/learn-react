@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-transform-optional-chaining": "^7.25.9",
+    "@babel/plugin-transform-private-methods": "^7.25.9",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "cra-template": "1.2.0",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.49",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^5.0.1",
+    "source-map-loader": "^5.0.0",
+    "webpack": "^5.97.1"
   },
   "scripts": {
     "start": "react-scripts start",

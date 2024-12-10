@@ -1,0 +1,8 @@
+.article {
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: nowrap; */
+	width: 2/3;
+	justify-content: center;
+	align-items: center;
+}
