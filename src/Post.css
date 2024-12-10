@@ -1,0 +1,23 @@
+.post {
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
+    height: 100Px;
+border: 3px solid #017575;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+hr {
+    color: #017575;
+    width: 500Px;
+    /* margin: 0; */
+}
+h2 {
+    margin: 5px;
+}
+p{
+    margin:5px ;
+}
