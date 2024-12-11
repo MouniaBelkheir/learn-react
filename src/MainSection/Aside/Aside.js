@@ -1,27 +1,40 @@
 import "./Aside.css";
 import Button from "./Button";
 export default function Aside() {
-	return (
-		<aside>
-			<Button tag=" جديدة">
-				<span>&#x1F4AB; &#x1F4AB; &#x1F4AB;</span>
-			</Button>
-			<Button tag="الأكثر قراءة">
-				<br />
-				<span>&#x2B50; &#x2B50; &#x2B50;</span>
-				<img
-					style={{ borderRadius: "5px", marginTop: "5px" }}
-					src="https://placehold.co/100x50/pink/FFFFFF.png"
-					alt="flower"
-				/>
-			</Button>
-			<Button tag="مقالات مميزة">
+	const TagButtons = [
+		{
+			id: "1",
+			tag: " جديدة",
+			content: "🎆🎆🎆",
+		},
+		{
+			id: "2",
+			tag: "الأكثر قراءة",
+			content: (
+				<>
+					<span>🎊🎊🎊</span>
+					<img
+						style={{ borderRadius: "5px", marginTop: "5px" }}
+						src="https://placehold.co/100x50/pink/FFFFFF.png"
+						alt="pink"
+					/>
+				</>
+			),
+		},
+		{
+			id: "3",
+			tag: "مقالات مميزة",
+			content: (
 				<img
 					style={{ borderRadius: "5px", marginTop: "5px" }}
 					src="https://placehold.co/100x100/orange/FFFFFF.png"
-					alt="flower"
+					alt="orange"
 				/>
-			</Button>
-		</aside>
-	);
+			),
+		},
+	];
+	const Buttons = TagButtons.map((tagB) => {
+		return <Button key={tagB.id} tag={tagB.tag} children={tagB.content} />;
+	});
+	return <aside>{Buttons}</aside>;
 }

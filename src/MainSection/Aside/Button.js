@@ -2,7 +2,8 @@ import "./Button.css";
 export default function Button({ tag, children }) {
 	return (
 		<button>
-			{tag}
+            {tag}
+            <br />
 			{children}
 		</button>
 	);
